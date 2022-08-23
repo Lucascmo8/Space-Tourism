@@ -1,0 +1,515 @@
+/*Gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+:root {
+    /*Colors*/
+    --color1: #0b0d17;
+    --color2: #d0d6f9;
+    --color3: #fff;
+
+    /*Fonts*/
+    --font1: "Bellefair", serif;
+    --font2: "Barlow Condensed", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* font-family: sans-serif; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* body{
+    height: 100%;
+    width: 100%;
+    background-color: darkblue;
+} */
+
+
+
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 96%;
+    padding: 10px;
+}
+
+header>button {
+    background: transparent url(../imagens/icones/icon-hamburger.svg) no-repeat;
+    width: 24px;
+    height: 21px;
+
+    border: none;
+    justify-self: center;
+    align-self: center;
+    z-index: 2;
+}
+
+header>button.active {
+    background-image: url(../imagens/icones/icon-close.svg);
+
+    transition: 0.5s;
+}
+
+nav {
+    color: var(--color2);
+    font-family: var(--font2);
+
+    display: block;
+    position: absolute;
+    width: 72%;
+    right: 0px;
+    height: 0px;
+    z-index: 1;
+    transition: .8s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+nav.active {
+    height:100vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+nav a{
+    color: var(--color2);
+}
+
+/*fim do cabeçalho*/
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+article#home {
+    background: url(../imagens/home/background-home-mobile.jpg) center no-repeat;
+    background-size: cover;
+    height: 667px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article#home>h1 {
+    color: var(--color2);
+    font-family: var(--font2);
+    font-size: 16px;
+
+    max-width: 327px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-top: 3em;
+    line-height: 5em;
+}
+
+article#home>h1>span {
+    font-family: var(--font1);
+    font-size: 80px;
+
+}
+
+article#home>p {
+    color: var(--color2);
+    font-family: var(--font2);
+    font-size: 15px;
+
+    max-width: 327px;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+}
+
+#explore{
+    color: var(--color1);
+    font-family: var(--font1);
+    font-size: 20px;
+    text-align: center;
+    border: none;
+
+    background-color: var(--color3);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 20px;
+
+
+    margin-top: 4em;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+#explore:hover {
+    outline: 50px solid rgba(255, 255, 255, 0.363);
+    background-color: var(--color3);
+    transition: 1s;
+}
+
+article#home>button>p {
+    align-self: center;
+    justify-self: center;
+}
+
+/*Fim do home*/
+
+/*Destination*/
+
+article#destination {
+    background: url(../imagens/planetas/background-destination-mobile.jpg) center no-repeat;
+    background-size: cover;
+    color: var(--color3);
+
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+}
+
+article#destination>h2 {
+    color: var(--color3);
+    font-size: 20px;
+    font-family: var(--font2);
+
+    text-align: center;
+    margin-top: 4em;
+    line-height: 5em;
+}
+
+article#destination>h2>span {
+    color: #d0d6f979;
+}
+
+article#destination>img {
+    width: 170px;
+    height: 170px;
+    align-self: center;
+    display: none;
+}
+
+article#destination img.active{
+    display: block;
+}
+
+
+article#destination>ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+article#destination button {
+    background-color: transparent;
+    border: 3px solid transparent;
+
+    font-family: var(--font2);
+    font-size: 14px;
+    color: var(--color2);
+    font-weight: bold;
+
+    padding: 20px;
+    cursor: pointer;
+}
+
+article#destination button:hover {
+    color: var(--color3);
+
+    transition: .5s;
+    border-bottom: 3px solid var(--color3);
+}
+
+article#destination button.active{
+    border-bottom: 3px solid var(--color3);
+}
+
+article#destination h1 {
+    text-align: center;
+
+    font-size: 56px;
+    color: var(--color3);
+    font-family: var(--font1);
+}
+
+article#destination p {
+    font-family: var(--font2);
+    color: var(--color2);
+
+    text-align: center;
+    max-width: 327px;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+    margin: auto;
+}
+
+article#destination section{
+    display: none;
+}
+
+article#destination section.active{
+    display: block;
+}
+
+
+div.asideDest {
+    text-align: center;
+    margin-top: 25px;
+
+    color: var(--color2);
+    font-size: 14px;
+    font-family: var(--font2);
+    line-height: 3em;
+}
+
+.asideDest span {
+    color: var(--color3);
+    font-size: 28px;
+    font-family: var(--font1);
+}
+
+/* Versão de tablet
+.asideDest{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+} */
+
+
+
+/*Fim Destination*/
+
+
+
+/*Crew*/
+article#crew {
+    background: url(../imagens/pessoas/background-crew-mobile.jpg) center no-repeat;
+    background-size: cover;
+    height: 710px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+article#crew>h1 {
+    font-family: var(--font2);
+    font-size: 20px;
+    text-align: center;
+
+    align-self: center;
+    justify-self: center;
+    margin-top: 5em;
+}
+
+article#crew>h1>span {
+    color: #d0d6f979;
+}
+
+article#crew img {
+    min-height: 222px;
+    max-height: 222px;
+    min-width: 177px;
+    max-width: 177px;
+    align-self: center;
+    border-bottom: 1px solid gray;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    display: none;
+}
+
+article#crew  .active{
+    display: block;
+}
+
+article#crew>ul {
+    display: flex;
+    /* margin-top: 1em; */
+    align-self: center;
+    margin-bottom: 1.5em;
+}
+
+article#crew button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color1);
+    margin-right: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+article#crew button:hover {
+    background-color: var(--color2);
+}
+
+article#crew button.active {
+    background-color: white;
+}
+
+article#crew section{
+    display: none;
+}
+
+article#crew section.active{
+    display: block;
+}
+
+article#crew>section>h1 {
+    font-size: 18px;
+    font-family: var(--font1);
+    color: var(--color2);
+    margin-bottom: 3em;
+}
+
+article#crew>section>h1>span {
+    font-size: 26px;
+    color: var(--color3);
+}
+
+article#crew>section>p {
+    font-family: var(--font2);
+    font-size: 18px;
+    color: var(--color2);
+
+    text-align: center;
+    width: 250px;
+    line-height: 1.5em;
+    margin: auto;
+}
+
+/*Fim Crew*/
+
+
+
+/*technology*/
+
+article#technology {
+    background: url(../imagens/naves/background-technology-mobile.jpg) center no-repeat;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    text-align: center;
+}
+
+article#technology>h1 {
+    font-family: var(--font2);
+    font-size: 18px;
+
+    text-align: center;
+
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+article#technology>h1>span {
+    color: #d0d6f979;
+}
+
+article#technology img {
+    width: 100%;
+    display: none;
+}
+
+article#technology .active{
+    display: block;
+}
+
+article#technology>img#launchImg{
+    object-position: 1px;
+}
+
+article#technology>ul {
+    display: flex;
+
+    font-family: var(--font1);
+    color: var(--color2);
+    font-size: 18px;
+
+    align-self: center;
+    margin-top: 2em;
+
+}
+
+
+article#technology button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    border: 2px solid var(--color2);
+    margin-right: 10px;
+    color: var(--color3);
+    margin-bottom: 20px;
+    
+}
+
+article#technology button:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+article#technology button.active {
+    background-color: var(--color3);
+    color: var(--color1);
+    border: var(--color3);
+}
+
+article#technology>h2 {
+    color: lightgray;
+    font-family: var(--font2);
+    font-size: 16px;
+}
+
+article#technology section{
+    display: none;
+}
+
+article#technology section.active{
+    display: block;
+}
+
+article#technology>section>h1 {
+    font-size: 24px;
+    font-family: var(--font1);
+    color: white;
+    margin-bottom: 1em;
+}
+
+article#technology>section>p {
+    color: var(--color2);
+    font-family: var(--font2);
+
+    text-align: center;
+    max-width: 327px;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+    margin: auto;
+}
