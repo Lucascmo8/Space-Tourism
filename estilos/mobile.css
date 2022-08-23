@@ -61,7 +61,6 @@ header>button.active {
 }
 
 nav {
-    color: var(--color2);
     font-family: var(--font2);
 
     display: block;
@@ -86,10 +85,33 @@ nav.active {
     overflow-y: auto;
 }
 
-nav a{
-    color: var(--color2);
+nav ul{
+    margin-top: 20%;
+    padding: 18px;
+    list-style: none;
 }
 
+nav li{
+    margin-top: 1.5em;
+}
+
+nav a{
+    color: var(--color3);
+    font-size: 20px;
+}
+
+nav a#hom::before{
+    content: "00  ";
+}
+nav a#dest::before{
+    content: "01  ";
+}
+nav a#cw::before{
+    content: "02  ";
+}
+nav a#tc::before{
+    content: "03  ";
+}
 /*fim do cabeçalho*/
 
 
