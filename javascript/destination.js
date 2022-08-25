@@ -14,73 +14,46 @@ let europaS = document.getElementById("europaSection")
 let titanS = document.getElementById("titanSection")
 
 
-function btnMars(){
+function cleand() {
     moonImg.classList.remove("active")
+    marsImg.classList.remove("active")
     europaImg.classList.remove("active")
     titanImg.classList.remove("active")
 
     moonBtn.classList.remove("active")
+    marsBtn.classList.remove("active")
     europaBtn.classList.remove("active")
     titanBtn.classList.remove("active")
 
     moonS.classList.remove("active")
+    marsS.classList.remove("active")
     europaS.classList.remove("active")
     titanS.classList.remove("active")
+}
 
+function btnMars() {
+    cleand()
     marsImg.classList.add("active")
     marsBtn.classList.add("active")
     marsS.classList.add("active")
 }
 
-function btnEuropa(){
-    moonImg.classList.remove("active")
-    marsImg.classList.remove("active")
-    titanImg.classList.remove("active")
-
-    moonBtn.classList.remove("active")
-    marsBtn.classList.remove("active")
-    titanBtn.classList.remove("active")
-    
-    moonS.classList.remove("active")
-    marsS.classList.remove("active")
-    titanS.classList.remove("active")
-
+function btnEuropa() {
+    cleand()
     europaImg.classList.add("active")
     europaBtn.classList.add("active")
     europaS.classList.add("active")
 }
 
-function btnTitan(){
-    moonImg.classList.remove("active")
-    marsImg.classList.remove("active")
-    europaImg.classList.remove("active")
-
-    moonBtn.classList.remove("active")
-    marsBtn.classList.remove("active")
-    europaBtn.classList.remove("active")
-
-    moonS.classList.remove("active")
-    marsS.classList.remove("active")
-    europaS.classList.remove("active")
-
+function btnTitan() {
+    cleand()
     titanImg.classList.add("active")
     titanBtn.classList.add("active")
     titanS.classList.add("active")
 }
 
-function btnMoon(){
-    marsImg.classList.remove("active")
-    europaImg.classList.remove("active")
-    titanImg.classList.remove("active")
-
-    marsBtn.classList.remove("active")
-    europaBtn.classList.remove("active")
-    titanBtn.classList.remove("active")
-
-    marsS.classList.remove("active")
-    europaS.classList.remove("active")
-    titanS.classList.remove("active")
-
+function btnMoon() {
+    cleand()
     moonImg.classList.add("active")
     moonBtn.classList.add("active")
     moonS.classList.add("active")

@@ -13,73 +13,46 @@ let markS = document.getElementById("markSection")
 let victorS = document.getElementById("victorSection")
 let anoushehS = document.getElementById("anoushehSection")
 
-function btnMark(){
+function cleanc(){
     douglasImg.classList.remove("active")
+    markImg.classList.remove("active")
     victorImg.classList.remove("active")
     anoushehImg.classList.remove("active")
 
     douglasBtn.classList.remove("active")
+    markBtn.classList.remove("active")
     victorBtn.classList.remove("active")
     anoushehBtn.classList.remove("active")
 
     douglasS.classList.remove("active")
+    markS.classList.remove("active")
     victorS.classList.remove("active")
     anoushehS.classList.remove("active")
+}
 
+function btnMark(){
+    cleanc()
     markImg.classList.add("active")
     markBtn.classList.add("active")
     markS.classList.add("active")
 }
 
 function btnVictor(){
-    douglasImg.classList.remove("active")
-    markImg.classList.remove("active")
-    anoushehImg.classList.remove("active")
-
-    douglasBtn.classList.remove("active")
-    markBtn.classList.remove("active")
-    anoushehBtn.classList.remove("active")
-    
-    douglasS.classList.remove("active")
-    markS.classList.remove("active")
-    anoushehS.classList.remove("active")
-
+    cleanc()
     victorImg.classList.add("active")
     victorBtn.classList.add("active")
     victorS.classList.add("active")
 }
 
 function btnAnousheh(){
-    douglasImg.classList.remove("active")
-    markImg.classList.remove("active")
-    victorImg.classList.remove("active")
-
-    douglasBtn.classList.remove("active")
-    markBtn.classList.remove("active")
-    victorBtn.classList.remove("active")
-
-    douglasS.classList.remove("active")
-    markS.classList.remove("active")
-    victorS.classList.remove("active")
-
+    cleanc()
     anoushehImg.classList.add("active")
     anoushehBtn.classList.add("active")
     anoushehS.classList.add("active")
 }
 
 function btnDouglas(){
-    markImg.classList.remove("active")
-    victorImg.classList.remove("active")
-    anoushehImg.classList.remove("active")
-
-    markBtn.classList.remove("active")
-    victorBtn.classList.remove("active")
-    anoushehBtn.classList.remove("active")
-
-    markS.classList.remove("active")
-    victorS.classList.remove("active")
-    anoushehS.classList.remove("active")
-
+    cleanc()
     douglasImg.classList.add("active")
     douglasBtn.classList.add("active")
     douglasS.classList.add("active")

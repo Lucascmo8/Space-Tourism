@@ -1,0 +1,30 @@
+@media screen and (min-width:481px){
+    /*Gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+:root {
+    /*Colors*/
+    --color1: #0b0d17;
+    --color2: #d0d6f9;
+    --color3: #fff;
+
+    /*Fonts*/
+    --font1: "Bellefair", serif;
+    --font2: "Barlow Condensed", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Cabeçalho*/
+
+}
