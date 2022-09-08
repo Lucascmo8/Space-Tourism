@@ -26,5 +26,7 @@ a{
 
 
 /*Cabeçalho*/
-
+#menu{
+    display: block
+}
 }

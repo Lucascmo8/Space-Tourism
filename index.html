@@ -11,7 +11,7 @@
     <title>Space</title>
 </head>
 
-<body>
+<body onload="troca()" onresize="troca()">
     <header>
         <a href="#home"><img src="imagens/icones/logo.svg" alt="Logo"></a>
         <button id="menuMobile"></button>
@@ -182,9 +182,9 @@
             <h1>
                 <span>03</span> Space Launch 101
             </h1>
-            <img src="imagens/naves/image-launch-vehicle-landscape.jpg" alt="Launch Vehicle" id="launchImg" class="active">
-            <img src="imagens/naves/image-spaceport-landscape.jpg" alt="Spaceport" id="spaceportImg">
-            <img src="imagens/naves/image-space-capsule-landscape.jpg" alt="capsule" id="capsuleImg">
+            <img  alt="Launch Vehicle" id="launchImg" class="active">
+            <img  alt="Spaceport" id="spaceportImg">
+            <img  alt="capsule" id="capsuleImg">
             <ul type="none">
                 <button id="launchBtn" class="active" onclick="btnLaunch()">1</button>
                 <button id="spaceportBtn" onclick="btnSpaceport()">2</button>
@@ -225,6 +225,7 @@
     <script src="javascript/destination.js"></script>
     <script src="javascript/crew.js"></script>
     <script src="javascript/technology.js"></script>
+    <script src="javascript/imagens.js"></script>
 </body>
 
 </html>

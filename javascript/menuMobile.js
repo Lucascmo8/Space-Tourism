@@ -7,3 +7,5 @@ function togglemenu(){
     menu_mb.classList.toggle("active")
     menu_mobile.classList.toggle("active")
 }
+
+// export default menu_mobile
