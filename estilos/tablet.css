@@ -1,4 +1,4 @@
-@media screen and (min-width:481px){
+@media screen and (min-width:580px){
     /*Gerais*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
@@ -26,7 +26,291 @@ a{
 
 
 /*Cabeçalho*/
-#menu{
-    display: block
+
+header{
+    right: 0;
 }
+nav{
+    width: 450px;
+    top: 0;
+    right: 0;
+    height: 0px;
+    transition: .8s;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+
+    background-color: #0b0d17;
+}
+nav.active{
+    width: 450px;
+    top: 0;
+    right: 0;
+    height: 0px;
+    transition: .8s;
+    height: 96px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+
+    background-color: #0b0d17;
+}
+
+nav ul{
+    margin-top:0;
+    margin-right: 0;
+    right: 0;
+}
+nav li{
+    margin-top: 6px;
+    margin-right: 0;
+    right: 0;
+}
+
+nav a{
+    margin-right: 0;
+    right: 0;
+}
+
+nav a:hover{
+    transition: .5s;
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--color3);
+}
+
+nav a#hom::before{
+    content: none;
+}
+nav a#dest::before{
+    content: none;
+}
+nav a#cw::before{
+    content: none;
+}
+nav a#tc::before{
+    content: none;
+}
+
+#menuMobile{
+    display: none;
+    visibility: hidden;
+}
+#menu{
+    display: block;
+    position:absolute;
+    visibility: visible;
+}
+#lista{
+    display: flex;
+    justify-content: space-evenly;
+    visibility: visible;
+}
+
+/* Fim Do cabeçalho */
+/* HOME */
+article#home {
+    background: url(../imagens/home/background-home-tablet.jpg) center no-repeat;
+    background-size: cover;
+
+    height: 1024px;
+}
+
+article#home>h1 {
+    font-size: 20px;
+
+    max-width: 450px;
+    margin-top: 6em;
+}
+
+article#home>h1>span {
+    font-size: 150px;
+}
+
+article#home>p {
+    font-size: 16px;
+}
+#explore{
+    font-size: 32px;
+
+    width: 242px;
+    height: 242px;
+}
+/*Fim do home*/
+
+/*Destination*/
+
+article#destination {
+    background: url(../imagens/planetas/background-destination-tablet.jpg) center no-repeat;
+    background-size: cover;
+
+    height: 1024px;
+}
+
+article#destination>h2 {
+    font-size: 20px;
+
+    text-align: justify;
+    margin-left: 1.5em;
+    margin-top: 6em;
+}
+
+article#destination>img {
+    width: 300px;
+    height: 300px;
+}
+
+article#destination img.active{
+    display: block;
+}
+
+
+article#destination>ul {
+    margin-top: 1.5em;
+}
+
+article#destination button {
+    font-size: 16px;
+}
+
+article#destination h1 {
+    font-size: 80px;
+
+    margin-top: .6em;
+}
+
+article#destination p {
+    font-size: 16px;
+    text-align: center;
+
+    max-width: 573px;
+    margin-top: 1.5em;
+}
+
+.asideDest{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+/*Fim Destination*/
+
+
+
+/*Crew*/
+article#crew {
+    background: url(../imagens/pessoas/background-crew-tablet.jpg) center no-repeat;
+    background-size: cover;
+    height: 1024px;
+
+    color: white;
+
+    display: grid;
+    grid-template-areas: 
+    "tituloCrew"
+    "textosCrew"
+    "btnsCrew"
+    "imgCrew";
+}
+
+article#crew>h1 {
+    grid-area: tituloCrew;
+    
+    font-size: 20px;
+
+    justify-self: flex-start;
+    margin-top: 6em;
+    margin-left: 1.5em;
+}
+
+article#crew img {
+    grid-area: imgCrew;
+    width: 456px;
+    height: 532px;
+    margin: auto;
+}
+
+article#crew  .active{
+    display: block;
+}
+
+article#crew>ul {
+    grid-area: btnsCrew;
+
+    display: flex;
+
+    margin: auto;
+}
+
+article#crew>section{
+    grid-area: textosCrew;
+}
+
+article#crew>section>h1 {
+    font-size: 24px;
+
+    line-height:1.8em ;
+}
+
+article#crew>section>h1>span {
+    font-size: 40px;
+}
+
+article#crew>section>p {
+    width: 520px;
+}
+
+/*Fim Crew*/
+
+/*technology*/
+
+article#technology {
+    background: url(../imagens/naves/background-technology-tablet.jpg) center no-repeat;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    text-align: center;
+}
+
+article#technology>h1 {
+    font-size: 20px;
+
+    text-align: justify;
+    margin-left: 1.5em;
+    margin-top: 6em;
+}
+
+article#technology>h1>span {
+    color: #d0d6f979;
+}
+
+article#technology img {
+    width: 100%;
+    height: 310px;
+}
+
+article#technology button {
+    width: 60px;
+    height: 60px;
+    
+    font-size: 24px;
+}
+article#technology>h2{
+    margin-top: 2em;
+    line-height: 4em;
+}
+article#technology>section>h1 {
+    font-size: 40px;
+}
+
+article#technology>section>p {
+    font-size: 18px;
+    
+    max-width: 460px;
+}
+/* Fim technology*/
 }
