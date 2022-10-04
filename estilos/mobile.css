@@ -136,7 +136,7 @@ article#home {
     align-items: center;
 }
 
-article#home>h1 {
+#textoHome h1 {
     color: var(--color2);
     font-family: var(--font2);
     font-size: 16px;
@@ -149,13 +149,13 @@ article#home>h1 {
     line-height: 5em;
 }
 
-article#home>h1>span {
+#textoHome h1>span {
     font-family: var(--font1);
     font-size: 80px;
 
 }
 
-article#home>p {
+#textoHome>p {
     color: var(--color2);
     font-family: var(--font2);
     font-size: 15px;
@@ -368,7 +368,7 @@ article#crew button {
     height: 12px;
     border-radius: 50%;
     border: none;
-    background-color: var(--color1);
+    background-color: #444444;
     margin-right: 10px;
     align-self: center;
     justify-self: center;
@@ -493,7 +493,7 @@ article#technology button.active {
     border: var(--color3);
 }
 
-article#technology>h2 {
+article#technology > section h2{
     color: lightgray;
     font-family: var(--font2);
     font-size: 16px;
