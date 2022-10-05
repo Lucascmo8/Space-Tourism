@@ -1,25 +1,5 @@
 @media screen and (min-width:992px){
-    /*Gerais*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-
-:root {
-    /*Colors*/
-    --color1: #0b0d17;
-    --color2: #d0d6f9;
-    --color3: #fff;
-
-    /*Fonts*/
-    --font1: "Bellefair", serif;
-    --font2: "Barlow Condensed", sans-serif;
-}
-
 /*Cabeçalho*/
-
-header{
-    right: 0;
-}
-
 nav{
     width: 830px;
 
@@ -58,27 +38,24 @@ article#home {
     height: 900px;
     width: 100%;
 
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    overflow-y: none;
 }
 
 #textoHome{
-    justify-self: center;
     align-self: center;
 }
 
 #textoHome h1 {
     font-size: 28px;
 
-    width: 450px;
     text-align: left;
     margin: 0;
-    justify-self: center;
 }
 
 #textoHome h1>span {
-    font-size: 150px;
     margin-left: -0.06em;
 }
 
@@ -91,8 +68,6 @@ article#home {
     max-width: 450px;
 }
 #explore{
-    font-size: 32px;
-
     width: 274px;
     height: 274px;
 }
@@ -153,10 +128,6 @@ article#destination>ul li{
     height: 20px;
 }
 
-article#destination button {
-    font-size: 16px;
-}
-
 article#destination h1 {
     font-size: 100px;
 
@@ -184,9 +155,7 @@ article#destination section h1{
 }
 
 .asideDest{
-    display: flex;
     justify-content: flex-start;
-    gap: 50px;
 }
 /*Fim Destination*/
 
@@ -195,8 +164,6 @@ article#crew {
     background: url(../imagens/pessoas/background-crew-desktop.jpg) center no-repeat;
     background-size: cover;
     height: 900px;
-
-    color: white;
 
     display: grid;
     grid-template-areas: 
@@ -228,21 +195,11 @@ article#crew img {
     height: 654px;
     justify-self: center;
     align-self: flex-end;
+
     margin: 0;
-
-    border: none;
-    
-}
-
-article#crew  .active{
-    display: block;
 }
 
 article#crew>ul {
-    grid-area: btnsCrew;
-
-    display: flex;
-
     margin:0;
     justify-self: left baseline;
     text-align: left;
@@ -250,7 +207,6 @@ article#crew>ul {
 }
 
 article#crew>section{
-    grid-area: textosCrew;
     justify-self: center;
     align-self: stretch;
     text-align: left;
@@ -260,7 +216,6 @@ article#crew>section{
 article#crew>section>h1 {
     font-size: 32px;
     text-align: left;
-    line-height:1.8em ;
     margin-bottom: 1em;
 }
 
@@ -280,7 +235,6 @@ article#crew>section>p {
 article#technology {
     background: url(../imagens/naves/background-technology-desktop.jpg) center no-repeat;
     background-size: cover;
-    color: white;
     height: 900px;
 
     display: grid;
@@ -306,10 +260,6 @@ article#technology>h1 {
     text-indent: 8em;
 }
 
-article#technology>h1>span {
-    color: #d0d6f979;
-}
-
 article#technology img {
     grid-area: imgTech;
 
@@ -322,10 +272,8 @@ article#technology img {
 
 article#technology>ul {
     grid-area: listaTech;
-    display: flex;
     flex-direction: column;
 
-    align-self: center;
     justify-self: end;
 }
 
@@ -352,7 +300,6 @@ article#technology>section>h1 {
 }
 
 article#technology>section>p {
-    font-size: 18px;
     text-align: left;
     max-width: 450px;
 }

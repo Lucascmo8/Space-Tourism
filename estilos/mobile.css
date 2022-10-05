@@ -32,17 +32,21 @@ a{
 header {
     display: flex;
     position: fixed;
+
     justify-content: space-between;
-    width: 96%;
     padding: 10px;
+
+    width: 96%;
 }
 
 header>button {
     background: transparent url(../imagens/icones/icon-hamburger.svg) no-repeat;
+    
     width: 24px;
     height: 21px;
 
     border: none;
+
     justify-self: center;
     align-self: center;
     z-index: 2;
@@ -59,14 +63,17 @@ nav {
 
     display: block;
     position: absolute;
-    width: 72%;
     top: 0;
     right: 0px;
-    height: 0px;
     z-index: 1;
+
+    height: 0px;
+    width: 72%;
+
     transition: .8s;
+
     visibility: hidden;
-    /* overflow-y: hidden; */
+    overflow-y: auto;
 }
 
 nav.active {
@@ -74,10 +81,10 @@ nav.active {
 
     display: flex;
     flex-direction: column;
+
     background-color: transparent;
     backdrop-filter: blur(5px);
     visibility: visible;
-    /* overflow-y: auto; */
 }
 
 nav ul{
@@ -115,15 +122,12 @@ nav a#tc::before{
 /*fim do cabeçalho*/
 
 
-
-
 main {
     display: flex;
     flex-direction: column;
 }
 
-
-
+/* HOME */
 article#home {
     background: url(../imagens/home/background-home-mobile.jpg) center no-repeat;
     background-size: cover;
@@ -140,29 +144,29 @@ article#home {
     color: var(--color2);
     font-family: var(--font2);
     font-size: 16px;
+    text-align: center;
+    line-height: 5em;
 
     max-width: 327px;
     align-self: center;
     justify-self: center;
-    text-align: center;
     margin-top: 3em;
-    line-height: 5em;
 }
 
 #textoHome h1>span {
     font-family: var(--font1);
     font-size: 80px;
-
 }
 
 #textoHome>p {
     color: var(--color2);
     font-family: var(--font2);
     font-size: 15px;
+    line-height: 1.5em;
 
     max-width: 327px;
+
     margin-top: 1.5em;
-    line-height: 1.5em;
 }
 
 #explore{
@@ -170,20 +174,21 @@ article#home {
     font-family: var(--font1);
     font-size: 20px;
     text-align: center;
-    border: none;
 
+    border: none;
     background-color: var(--color3);
+
     width: 150px;
     height: 150px;
     border-radius: 50%;
     padding: 20px;
 
 
-    margin-top: 4em;
     display: flex;
-    justify-self: flex-end;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
+    margin-top: 4em;
 }
 
 #explore:hover {
@@ -192,10 +197,6 @@ article#home {
     transition: 1s;
 }
 
-article#home>button>p {
-    align-self: center;
-    justify-self: center;
-}
 
 /*Fim do home*/
 
@@ -217,8 +218,8 @@ article#destination>h2 {
     font-family: var(--font2);
 
     text-align: center;
-    margin-top: 4em;
     line-height: 5em;
+    margin-top: 4em;
 }
 
 article#destination>h2>span {
@@ -229,6 +230,7 @@ article#destination>img {
     width: 170px;
     height: 170px;
     align-self: center;
+    /* imagem escondia para o DOM */
     display: none;
 }
 
@@ -247,9 +249,9 @@ article#destination button {
     background-color: transparent;
     border: 3px solid transparent;
 
+    color: var(--color2);
     font-family: var(--font2);
     font-size: 14px;
-    color: var(--color2);
     font-weight: bold;
 
     padding: 20px;
@@ -268,24 +270,26 @@ article#destination button.active{
 }
 
 article#destination h1 {
-    text-align: center;
-
     font-size: 56px;
     color: var(--color3);
     font-family: var(--font1);
+    text-align: center;
+
+    margin-top: .5em;
 }
 
 article#destination p {
     font-family: var(--font2);
     color: var(--color2);
-
     text-align: center;
+
     max-width: 327px;
     margin-top: 1.5em;
     line-height: 1.5em;
     margin: auto;
 }
 
+/* Funcionalidade para o DOM */
 article#destination section{
     display: none;
 }
@@ -296,13 +300,13 @@ article#destination section.active{
 
 
 div.asideDest {
-    text-align: center;
-    margin-top: 25px;
-
     color: var(--color2);
     font-size: 14px;
     font-family: var(--font2);
+    text-align: center;
+    
     line-height: 3em;
+    margin-top: 25px;
 }
 
 .asideDest span {
@@ -314,7 +318,6 @@ div.asideDest {
 /*Fim Destination*/
 
 
-
 /*Crew*/
 article#crew {
     background: url(../imagens/pessoas/background-crew-mobile.jpg) center no-repeat;
@@ -322,10 +325,10 @@ article#crew {
     height: 710px;
 
     color: white;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 article#crew>h1 {
@@ -358,20 +361,18 @@ article#crew  .active{
 
 article#crew>ul {
     display: flex;
-    /* margin-top: 1em; */
     align-self: center;
     margin-bottom: 1.5em;
 }
 
 article#crew button {
+    background-color: #444444;
+
     width: 12px;
     height: 12px;
     border-radius: 50%;
     border: none;
-    background-color: #444444;
     margin-right: 10px;
-    align-self: center;
-    justify-self: center;
 }
 
 article#crew button:hover {
@@ -406,15 +407,15 @@ article#crew>section>p {
     font-family: var(--font2);
     font-size: 18px;
     color: var(--color2);
-
     text-align: center;
-    width: 250px;
+
     line-height: 1.5em;
+
+    width: 250px;
     margin: auto;
 }
 
 /*Fim Crew*/
-
 
 
 /*technology*/
@@ -423,11 +424,11 @@ article#technology {
     background: url(../imagens/naves/background-technology-mobile.jpg) center no-repeat;
     background-size: cover;
     color: white;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
-    height: 720px;
-    text-align: center;
+    min-height: 720px;
 }
 
 article#technology>h1 {
@@ -466,30 +467,30 @@ article#technology>ul {
 
     align-self: center;
     margin-top: 2em;
-
+    gap: 15px;
 }
 
 
 article#technology button {
+    color: var(--color3);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--color2);
+
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: transparent;
-    border: 2px solid var(--color2);
-    margin-right: 10px;
-    color: var(--color3);
+
     margin-bottom: 20px;
-    
 }
 
 article#technology button:hover{
+    color: var(--color1);
     background-color: var(--color2);
-    color: var(--color1);
 }
+
 article#technology button.active {
-    background-color: var(--color3);
     color: var(--color1);
+    background-color: var(--color3);
     border: var(--color3);
 }
 
@@ -519,8 +520,8 @@ article#technology>section>p {
     font-family: var(--font2);
 
     text-align: center;
+    line-height: 1.5em;
     max-width: 327px;
     margin-top: 1.5em;
-    line-height: 1.5em;
     margin: auto;
 }
