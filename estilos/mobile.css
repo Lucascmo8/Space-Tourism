@@ -18,11 +18,13 @@
 * {
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 
 
